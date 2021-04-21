@@ -12,21 +12,7 @@
             <form action="{{ route('plans.store') }}" method="post" class="form">
                 @csrf
 
-                <div class="form-group">
-                    <label for="name">Nome:</label>
-                    <input type="text" name="name" class="form-control" placeholder="Nome:">
-                </div>
-                <div class="form-group">
-                    <label for="prince">Preço:</label>
-                    <input type="text" name="prince" class="form-control" placeholder="Preço:">
-                </div>
-                <div class="form-group">
-                    <label for="description">Descrição:</label>
-                    <input type="text" name="description" class="form-control" placeholder="Descrição:">
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="btn btn-dark">Enviar</button>
-                </div>
+                @include('admin.pages.plans._partials.form')
             </form>
         </div>
     </div>
